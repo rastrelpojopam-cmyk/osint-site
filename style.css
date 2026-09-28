@@ -385,13 +385,11 @@ kbd {
   margin: 0;
 }
 
-.telegram-link-wrap {
-  display: flex;
-  justify-content: center;
-  margin-top: 38px;
-}
-
 .telegram-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -472,7 +470,20 @@ body.light .tool-icon {
 
 @media (max-width: 600px) {
   .topbar {
+    height: auto;
+    min-height: 64px;
     padding: 0 14px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .telegram-link {
+    position: static;
+    order: 1;
+    flex-basis: 100%;
+    top: auto;
+    transform: none;
+    text-align: center;
   }
 
   .layout,
