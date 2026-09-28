@@ -80,6 +80,13 @@ const TOOLS = [
     icon: "P",
     description: "Проверка утечек аккаунтов"
   },
+    {
+    category: "Люди и контакты",
+    name: "Truecaller",
+    url: "https://www.truecaller.com/",
+    icon: "P",
+    description: "Проверка базы данных номеров"
+  },
 
   // Соцсети и мессенджеры
   {
