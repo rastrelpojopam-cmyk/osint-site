@@ -101,10 +101,12 @@ a {
 
 .admin-link {
   padding: 7px 11px;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
 }
 
 .icon-btn:hover,
-.admin-link:hover,
 .sort-btn:hover {
   color: var(--text);
   border-color: #42464a;
