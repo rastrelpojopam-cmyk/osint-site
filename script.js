@@ -86,7 +86,6 @@ const TOOLS = [
     icon: "P",
     description: "Проверка номера телефона и его оператора."
   },
-
   // Соцсети и мессенджеры
   {
     category: "Соцсети и мессенджеры",
@@ -108,6 +107,13 @@ const TOOLS = [
     url: "https://github.com/pielco11/telescan",
     icon: "T",
     description: "Инструмент для анализа Telegram-каналов и групп."
+  },
+    {
+    category: "Соцсети и мессенджеры",
+    name: "Signal",
+    url: "https://signal.org/",
+    icon: "S",
+    description: "Мессенджер с открытым исходным кодом и сквозным шифрованием."
   },
 
   // Домены, сеть и угрозы
@@ -246,13 +252,6 @@ const TOOLS = [
   },
 
   // Код и репозитории
-  {
-    category: "Код и репозитории",
-    name: "Signal",
-    url: "https://signal.org/",
-    icon: "S",
-    description: "Мессенджер с открытым исходным кодом и шифрованием."
-  },
   {
     category: "Код и репозитории",
     name: "Nmap",
@@ -429,7 +428,7 @@ const TOOL_DESCRIPTIONS_EN = {
   "Hugging Face": "AI models and tools.",
   "OWASP": "Security resources and training.",
   "Tor": "Anonymous access and privacy protection.",
-  "Signal": "Open-source messenger with end-to-end encryption.",
+  "Signal": "Open-source messaging app with end-to-end encryption.",
   "Nmap": "Network scanning and vulnerability analysis.",
   "ISC SANS": "Cybersecurity news and analysis.",
   "GitHub": "Code and repositories.",
