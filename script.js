@@ -373,7 +373,6 @@ const UI_TEXT = {
     heroText: "Лёгкий каталог инструментов для команды.",
     toolsText: "инструментов",
     categoriesText: "категорий",
-    visitsLabel: "посещений",
     searchPlaceholder: "Поиск инструмента...",
     emptyTitle: "Ничего не найдено",
     emptyText: "Попробуй изменить запрос или выбрать другую категорию.",
@@ -386,7 +385,6 @@ const UI_TEXT = {
     heroText: "A lightweight OSINT tool catalog for the team.",
     toolsText: "tools",
     categoriesText: "categories",
-    visitsLabel: "visits",
     searchPlaceholder: "Search tool...",
     emptyTitle: "Nothing found",
     emptyText: "Try a different query or choose another category.",
@@ -503,18 +501,7 @@ const searchInput = document.getElementById("searchInput");
 const empty = document.getElementById("empty");
 const toolCount = document.getElementById("toolCount");
 const categoryCount = document.getElementById("categoryCount");
-const visitCount = document.getElementById("visitCount");
 const allCount = document.getElementById("allCount");
-
-const VISIT_KEY = "osint-site-visits";
-
-function updateVisitCounter() {
-  const currentVisits = Number(localStorage.getItem(VISIT_KEY) || "0");
-  const nextVisits = currentVisits + 1;
-
-  localStorage.setItem(VISIT_KEY, String(nextVisits));
-  visitCount.textContent = String(nextVisits);
-}
 
 const categories = [...new Set(TOOLS.map(tool => tool.category))];
 
@@ -670,5 +657,4 @@ document.addEventListener("keydown", event => {
   }
 });
 
-updateVisitCounter();
 render();

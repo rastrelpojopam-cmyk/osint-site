@@ -1,4 +1,4 @@
-# OSINT-Site
+# Osint-Tools
 
 A lightweight catalog of OSINT tools for XZX SQUAD. It brings useful services together and makes it easy to find the right tool.
 
@@ -8,9 +8,6 @@ A lightweight catalog of OSINT tools for XZX SQUAD. It brings useful services to
 - Sort tools alphabetically.
 - Switch between Russian and English.
 - Choose a dark or light theme; your preference is saved in the browser.
-- Track visits locally in the browser.
-
-> The local counter does not show total site traffic. Its value is stored separately in each browser.
 
 ## Run
 

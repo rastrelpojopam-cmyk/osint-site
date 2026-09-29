@@ -81,39 +81,20 @@ a {
 }
 
 .brand-mark {
-  width: 28px;
-  height: 28px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  color: var(--muted);
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  object-fit: contain;
+}
+
+body.light .brand-mark {
+  filter: invert(1);
 }
 
 .brand-subtitle {
   color: var(--muted);
   font-size: 11px;
   letter-spacing: .02em;
-}
-
-.brand-visit {
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 700;
-  padding-left: 8px;
-  border-left: 1px solid var(--line);
-  white-space: nowrap;
-}
-
-.brand-visit strong {
-  color: inherit;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-body.light .brand-visit,
-body.light .brand-visit strong {
-  color: #111111;
 }
 
 .top-actions {
