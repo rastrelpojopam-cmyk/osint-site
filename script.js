@@ -1,11 +1,3 @@
-/*
-  ==========================================
-  OSINT CATALOG — ДАННЫЕ КАТАЛОГА
-  ==========================================
-  Чтобы добавить/изменить инструмент, редактируй
-  массив TOOLS ниже. Никакой базы данных не нужно.
-*/
-
 const TOOLS = [
   // Поиск и мониторинг
   {
@@ -80,7 +72,7 @@ const TOOLS = [
     icon: "P",
     description: "Проверка утечек аккаунтов"
   },
-    {
+  {
     category: "Люди и контакты",
     name: "Truecaller",
     url: "https://www.truecaller.com/",
@@ -91,33 +83,40 @@ const TOOLS = [
   // Соцсети и мессенджеры
   {
     category: "Соцсети и мессенджеры",
-    name: "Telegram",
-    url: "https://web.telegram.org/",
+    name: "TGCollector",
+    url: "https://www.tgcollector.com/",
     icon: "T",
-    description: "Мессенджер"
+    description: "Сбор данных из Telegram."
   },
   {
     category: "Соцсети и мессенджеры",
-    name: "Reddit",
-    url: "https://www.reddit.com/",
+    name: "TgramSearch",
+    url: "https://tgramsearch.com/",
     icon: "R",
-    description: "Социальная платформа"
+    description: "Удобный поиск по Telegram-каналам и группам."
+  },
+  {
+    category: "Соцсети и мессенджеры",
+    name: "Telescan",
+    url: "https://github.com/pielco11/telescan",
+    icon: "T",
+    description: "Инструмент для анализа Telegram-каналов и групп."
   },
 
   // Домены, сеть и угрозы
   {
     category: "Домены, сеть и угрозы",
-    name: "SecurityTrails",
-    url: "https://securitytrails.com/",
-    icon: "S",
-    description: "DNS и доменная информация"
+    name: "who.is",
+    url: "https://who.is/",
+    icon: "W",
+    description: "Информация о владельцах доменов и IP-адресах."
   },
   {
     category: "Домены, сеть и угрозы",
-    name: "crt.sh",
-    url: "https://crt.sh/",
-    icon: "C",
-    description: "Certificate Transparency"
+    name: "onion lookup",
+    url: "https://onion.ail-project.org/",
+    icon: "O",
+    description: "Поиск информации о .onion доменах и их владельцах."
   },
   {
     category: "Домены, сеть и угрозы",
@@ -140,7 +139,14 @@ const TOOLS = [
     name: "Google Maps",
     url: "https://maps.google.com/",
     icon: "M",
-    description: "Карты и объекты"
+    description: "Карта и спутниковые снимки"
+  },
+  {
+    category: "Гео и объекты",
+    name: "2GIS",
+    url: "https://2gis.ru/",
+    icon: "2",
+    description: "Карта и справочник организаций"
   },
 
   // Медиа и файлы
@@ -189,22 +195,22 @@ const TOOLS = [
     category: "Рабочая среда",
     name: "ZodiacGraph",
     url: "https://zodiacgraph.netlify.app/",
-    icon: "C",
-    description: "ZodiacGraph - Инструмент для преобразования данных в графы и визуализации связей между объектами. Позволяет анализировать сложные структуры данных и выявлять скртые связи, что делает его полезным для OSINT-исследований и анализа информации."
+    icon: "Z",
+    description: "Инструмент для визуализации связей и анализа данных."
   },
-    {
+  {
     category: "Рабочая среда",
     name: "Obsidian",
     url: "https://obsidian.md/",
     icon: "O",
-    description: "Obsidian - Мощный инструмент для ведения заметок и организации информации. Позволяет создавать взаимосвязанные заметки, использовать графовые представления и плагины для расширения функциональности. Идеален для OSINT-исследований и управления знаниями."
+    description: "Мощный инструмент для заметок и организации знаний."
   },
-      {
+  {
     category: "Рабочая среда",
     name: "Miro",
     url: "https://miro.com/",
     icon: "M",
-    description: "Miro - Платформа для совместной работы и визуализации идей. Позволяет создавать диаграммы, макеты и другие визуальные материалы, что делает её полезной для OSINT-исследований и планирования."
+    description: "Платформа для совместной работы и визуализации идей."
   },
 
   // Искусственный интеллект
@@ -224,8 +230,36 @@ const TOOLS = [
     icon: "O",
     description: "Безопасность и обучение"
   },
+  {
+    category: "OPSEC и обучение",
+    name: "Tor",
+    url: "https://torproject.org/",
+    icon: "T",
+    description: "Анонимный доступ и защита конфиденциальности."
+  },
 
   // Код и репозитории
+  {
+    category: "Код и репозитории",
+    name: "Signal",
+    url: "https://signal.org/",
+    icon: "S",
+    description: "Мессенджер с открытым исходным кодом и шифрованием."
+  },
+  {
+    category: "Код и репозитории",
+    name: "Nmap",
+    url: "https://nmap.org/book/man.html",
+    icon: "N",
+    description: "Сканирование сетей и анализ уязвимостей."
+  },
+  {
+    category: "Код и репозитории",
+    name: "ISC SANS",
+    url: "https://isc.sans.edu/rssfeed_full.xml",
+    icon: "I",
+    description: "Новости и анализ по кибербезопасности."
+  },
   {
     category: "Код и репозитории",
     name: "GitHub",
@@ -266,16 +300,16 @@ const TOOLS = [
     description: "Поиск интернет-хостов и сертификатов"
   },
 
-  // Зеркала
+  // Веб-архивы
   {
-    category: "Зеркала",
+    category: "Веб-архивы",
     name: "Archive.today",
     url: "https://archive.today/",
     icon: "A",
     description: "Архив веб-страниц"
   },
   {
-    category: "Зеркала",
+    category: "Веб-архивы",
     name: "Wayback Machine",
     url: "https://web.archive.org/",
     icon: "W",
@@ -289,13 +323,191 @@ const state = {
   alphabetical: true
 };
 
+const CATEGORY_TRANSLATIONS = {
+  ru: {
+    "Поиск и мониторинг": "Поиск и мониторинг",
+    "Люди и контакты": "Люди и контакты",
+    "Соцсети и мессенджеры": "Соцсети и мессенджеры",
+    "Домены, сеть и угрозы": "Домены, сеть и угрозы",
+    "Гео и объекты": "Гео и объекты",
+    "Медиа и файлы": "Медиа и файлы",
+    "Реестры и бизнес": "Реестры и бизнес",
+    "Крипто и блокчейн": "Крипто и блокчейн",
+    "Рабочая среда": "Рабочая среда",
+    "Искусственный интеллект": "Искусственный интеллект",
+    "OPSEC и обучение": "OPSEC и обучение",
+    "Код и репозитории": "Код и репозитории",
+    "Дорки": "Дорки",
+    "Порты": "Порты",
+    "Веб-архивы": "Веб-архивы"
+  },
+  en: {
+    "Поиск и мониторинг": "Search & Monitoring",
+    "Люди и контакты": "People & Contacts",
+    "Соцсети и мессенджеры": "Social Networks & Messengers",
+    "Домены, сеть и угрозы": "Domains, Network & Threats",
+    "Гео и объекты": "Geo & Places",
+    "Медиа и файлы": "Media & Files",
+    "Реестры и бизнес": "Registries & Business",
+    "Крипто и блокчейн": "Crypto & Blockchain",
+    "Рабочая среда": "Workspace",
+    "Искусственный интеллект": "Artificial Intelligence",
+    "OPSEC и обучение": "OPSEC & Training",
+    "Код и репозитории": "Code & Repositories",
+    "Дорки": "Dorks",
+    "Порты": "Ports",
+    "Веб-архивы": "Web Archives"
+  }
+};
+
+const UI_TEXT = {
+  ru: {
+    categories: "Категории",
+    allTools: "Все инструменты",
+    heroText: "Лёгкий каталог инструментов для команды.",
+    toolsText: "инструментов",
+    categoriesText: "категорий",
+    visitsLabel: "посещений",
+    searchPlaceholder: "Поиск инструмента...",
+    emptyTitle: "Ничего не найдено",
+    emptyText: "Попробуй изменить запрос или выбрать другую категорию.",
+    telegramLink: "Telegram-канал",
+    sortLabel: "A–Я"
+  },
+  en: {
+    categories: "Categories",
+    allTools: "All tools",
+    heroText: "A lightweight OSINT tool catalog for the team.",
+    toolsText: "tools",
+    categoriesText: "categories",
+    visitsLabel: "visits",
+    searchPlaceholder: "Search tool...",
+    emptyTitle: "Nothing found",
+    emptyText: "Try a different query or choose another category.",
+    telegramLink: "Telegram channel",
+    sortLabel: "A–Z"
+  }
+};
+
+const TOOL_DESCRIPTIONS_EN = {
+  "Google": "Search engine",
+  "Yandex": "Search and web services",
+  "DuckDuckGo": "Search engine",
+  "Brave Search": "Independent search engine",
+  "SearXNG": "Meta-search engine",
+  "Startpage": "Private search engine",
+  "Google Scholar": "Academic search",
+  "arXiv": "Research publications",
+  "Hunter": "Find professional email addresses",
+  "Have I Been Pwned": "Check whether accounts have appeared in data breaches",
+  "Truecaller": "Phone number lookup database",
+  "TGCollector": "Collect data from Telegram",
+  "TgramSearch": "Search Telegram channels and groups",
+  "Telescan": "Analyze Telegram channels and groups",
+  "who.is": "Domain and IP address ownership information",
+  "onion lookup": "Find information about .onion domains and their owners",
+  "VirusTotal": "Analyze files, URLs, and domains",
+  "OpenStreetMap": "Open map",
+  "Google Maps": "Maps and satellite imagery",
+  "2GIS": "Map and business directory",
+  "ExifTool": "File metadata",
+  "InVID": "Video analysis and verification",
+  "OpenCorporates": "Company data",
+  "Etherscan": "Ethereum explorer",
+  "Blockchain.com Explorer": "Blockchain explorer",
+  "ZodiacGraph": "Visualize connections and analyze data",
+  "Obsidian": "Note-taking and knowledge management",
+  "Miro": "Collaborative workspace for visualizing ideas",
+  "Hugging Face": "AI models and tools",
+  "OWASP": "Security resources and training",
+  "Tor": "Anonymous access and privacy protection",
+  "Signal": "Open-source messenger with end-to-end encryption",
+  "Nmap": "Network scanning and vulnerability analysis",
+  "ISC SANS": "Cybersecurity news and analysis",
+  "GitHub": "Code and repositories",
+  "GitLab": "Repositories and CI/CD",
+  "Google Advanced Search": "Advanced search",
+  "Shodan": "Find publicly accessible internet-connected services",
+  "Censys": "Search internet hosts and certificates",
+  "Archive.today": "Web page archive",
+  "Wayback Machine": "Web archive"
+};
+
+function getToolDescription(tool) {
+  if (getCurrentLanguage() === "en") {
+    return TOOL_DESCRIPTIONS_EN[tool.name] || tool.description || "";
+  }
+
+  return tool.description || "";
+}
+
+function getCurrentLanguage() {
+  return document.body.dataset.lang || "ru";
+}
+
+function translateCategory(category) {
+  return CATEGORY_TRANSLATIONS[getCurrentLanguage()][category] || category;
+}
+
+function applyLanguage(lang) {
+  const textBundle = UI_TEXT[lang] || UI_TEXT.ru;
+
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang === "en" ? "en" : "ru";
+
+  const langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    langToggle.textContent = lang === "en" ? "RU" : "EN";
+  }
+
+  document.querySelectorAll("[data-i18n]").forEach(node => {
+    const key = node.dataset.i18n;
+    if (textBundle[key]) {
+      node.textContent = textBundle[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(node => {
+    const key = node.dataset.i18nPlaceholder;
+    if (textBundle[key]) {
+      node.placeholder = textBundle[key];
+    }
+  });
+
+  const sortBtn = document.getElementById("sortBtn");
+  if (sortBtn) {
+    sortBtn.textContent = textBundle.sortLabel;
+  }
+
+  const themeBtn = document.getElementById("themeBtn");
+  if (themeBtn) {
+    const isLight = document.body.classList.contains("light");
+    themeBtn.title = lang === "en" ? "Toggle theme" : "Переключить тему";
+    themeBtn.setAttribute("aria-label", lang === "en" ? "Toggle theme" : "Переключить тему");
+    themeBtn.setAttribute("aria-pressed", String(isLight));
+  }
+
+  render();
+}
+
 const catalog = document.getElementById("catalog");
 const categoryNav = document.getElementById("categoryNav");
 const searchInput = document.getElementById("searchInput");
 const empty = document.getElementById("empty");
 const toolCount = document.getElementById("toolCount");
 const categoryCount = document.getElementById("categoryCount");
+const visitCount = document.getElementById("visitCount");
 const allCount = document.getElementById("allCount");
+
+const VISIT_KEY = "osint-site-visits";
+
+function updateVisitCounter() {
+  const currentVisits = Number(localStorage.getItem(VISIT_KEY) || "0");
+  const nextVisits = currentVisits + 1;
+
+  localStorage.setItem(VISIT_KEY, String(nextVisits));
+  visitCount.textContent = String(nextVisits);
+}
 
 const categories = [...new Set(TOOLS.map(tool => tool.category))];
 
@@ -312,7 +524,7 @@ function renderCategoryNav() {
   categoryNav.innerHTML = categories.map(category => `
     <button class="category ${state.category === category ? "active" : ""}"
             data-category="${escapeHtml(category)}">
-      <span>${escapeHtml(category)}</span>
+      <span>${escapeHtml(translateCategory(category))}</span>
       <span class="count">${counts[category]}</span>
     </button>
   `).join("");
@@ -338,6 +550,7 @@ function filteredTools() {
       !query ||
       tool.name.toLowerCase().includes(query) ||
       tool.description.toLowerCase().includes(query) ||
+      getToolDescription(tool).toLowerCase().includes(query) ||
       tool.category.toLowerCase().includes(query);
 
     return categoryMatch && searchMatch;
@@ -366,7 +579,7 @@ function render() {
   catalog.innerHTML = Object.entries(grouped).map(([category, items]) => `
     <section class="category-block">
       <div class="category-heading">
-        <h2>${escapeHtml(category)}</h2>
+        <h2>${escapeHtml(translateCategory(category))}</h2>
         <span>${items.length}</span>
       </div>
 
@@ -379,7 +592,7 @@ function render() {
             <div class="tool-icon">${escapeHtml(tool.icon || "⌁")}</div>
             <div class="tool-body">
               <div class="tool-name">${escapeHtml(tool.name)}</div>
-              <div class="tool-desc">${escapeHtml(tool.description || "")}</div>
+              <div class="tool-desc">${escapeHtml(getToolDescription(tool))}</div>
               <div class="tool-url">${escapeHtml(new URL(tool.url).hostname)}</div>
             </div>
           </a>
@@ -412,22 +625,28 @@ searchInput.addEventListener("input", () => {
   render();
 });
 
-document.getElementById("sortBtn").addEventListener("click", event => {
-  state.alphabetical = !state.alphabetical;
-  event.currentTarget.textContent = state.alphabetical ? "A–Я" : "Исходный";
-  render();
-});
+const langToggle = document.getElementById("langToggle");
 
-document.getElementById("themeBtn").addEventListener("click", () => {
-  document.body.classList.toggle("light");
-  localStorage.setItem(
-    "osint-theme",
-    document.body.classList.contains("light") ? "light" : "dark"
-  );
+if (langToggle) {
+  langToggle.addEventListener("click", () => {
+    const nextLang = getCurrentLanguage() === "en" ? "ru" : "en";
+    applyLanguage(nextLang);
+  });
+}
+
+applyLanguage("ru");
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light");
+  themeBtn.setAttribute("aria-pressed", String(isLight));
+  localStorage.setItem("osint-theme", isLight ? "light" : "dark");
 });
 
 if (localStorage.getItem("osint-theme") === "light") {
   document.body.classList.add("light");
+  themeBtn.setAttribute("aria-pressed", "true");
 }
 
 document.addEventListener("keydown", event => {
@@ -444,4 +663,5 @@ document.addEventListener("keydown", event => {
   }
 });
 
+updateVisitCounter();
 render();

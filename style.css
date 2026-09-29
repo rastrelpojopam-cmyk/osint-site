@@ -60,10 +60,22 @@ a {
   z-index: 20;
 }
 
+.brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.brand-title {
   font-weight: 700;
   letter-spacing: -.02em;
 }
@@ -78,6 +90,32 @@ a {
   color: var(--muted);
 }
 
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .02em;
+}
+
+.brand-visit {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  padding-left: 8px;
+  border-left: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.brand-visit strong {
+  color: inherit;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+body.light .brand-visit,
+body.light .brand-visit strong {
+  color: #111111;
+}
+
 .top-actions {
   display: flex;
   align-items: center;
@@ -86,7 +124,8 @@ a {
 
 .icon-btn,
 .admin-link,
-.sort-btn {
+.sort-btn,
+.lang-btn {
   border: 1px solid var(--line);
   background: var(--panel);
   color: var(--muted);
@@ -97,6 +136,12 @@ a {
 .icon-btn {
   width: 34px;
   height: 34px;
+}
+
+.lang-btn {
+  height: 34px;
+  padding: 0 10px;
+  font-size: 12px;
 }
 
 .admin-link {
@@ -434,8 +479,46 @@ body.light .topbar {
   background: rgba(245,246,247,.88);
 }
 
+body.light .category.active {
+  background: #eef1f3;
+  color: var(--text);
+}
+
+body.light .tool {
+  background: rgba(255,255,255,.9);
+  border-color: var(--line);
+}
+
+body.light .tool:hover {
+  background: var(--panel-hover);
+}
+
 body.light .tool-icon {
   background: #f5f6f7;
+  border-color: var(--line);
+}
+
+body.light .search {
+  background: var(--panel);
+}
+
+body.light .icon-btn,
+body.light .admin-link,
+body.light .sort-btn,
+body.light .telegram-link {
+  background: var(--panel);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+body.light .admin-link {
+  color: var(--muted);
+}
+
+body.light .telegram-link:hover,
+body.light .telegram-link:focus-visible {
+  background: var(--panel-hover);
+  border-color: #bec3c8;
 }
 
 @media (max-width: 900px) {
