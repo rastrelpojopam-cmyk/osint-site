@@ -5,56 +5,56 @@ const TOOLS = [
     name: "Google",
     url: "https://www.google.com/",
     icon: "G",
-    description: "Поисковая система"
+    description: "Поисковая система."
   },
   {
     category: "Поиск и мониторинг",
     name: "Yandex",
     url: "https://yandex.com/",
     icon: "Я",
-    description: "Поиск и веб-сервисы"
+    description: "Поиск и веб-сервисы."
   },
   {
     category: "Поиск и мониторинг",
     name: "DuckDuckGo",
     url: "https://duckduckgo.com/",
     icon: "D",
-    description: "Поиск"
+    description: "Поиск."
   },
   {
     category: "Поиск и мониторинг",
     name: "Brave Search",
     url: "https://search.brave.com/",
     icon: "B",
-    description: "Независимый поиск"
+    description: "Независимый поиск."
   },
   {
     category: "Поиск и мониторинг",
     name: "SearXNG",
     url: "https://searx.space/",
     icon: "S",
-    description: "Метапоиск"
+    description: "Метапоиск."
   },
   {
     category: "Поиск и мониторинг",
     name: "Startpage",
     url: "https://www.startpage.com/",
     icon: "S",
-    description: "Приватный поиск"
+    description: "Приватный поиск."
   },
   {
     category: "Поиск и мониторинг",
     name: "Google Scholar",
     url: "https://scholar.google.com/",
     icon: "G",
-    description: "Научный поиск"
+    description: "Научный поиск."
   },
   {
     category: "Поиск и мониторинг",
     name: "arXiv",
     url: "https://arxiv.org/",
     icon: "X",
-    description: "Научные публикации"
+    description: "Научные публикации."
   },
 
   // Люди и контакты
@@ -63,21 +63,28 @@ const TOOLS = [
     name: "Hunter",
     url: "https://hunter.io/",
     icon: "H",
-    description: "Поиск рабочих email"
+    description: "Поиск рабочих email-адресов."
   },
   {
     category: "Люди и контакты",
     name: "Have I Been Pwned",
     url: "https://haveibeenpwned.com/",
     icon: "P",
-    description: "Проверка утечек аккаунтов"
+    description: "Проверка, появлялись ли аккаунты в утечках данных."
   },
   {
     category: "Люди и контакты",
     name: "Truecaller",
     url: "https://www.truecaller.com/",
     icon: "P",
-    description: "Проверка базы данных номеров"
+    description: "База данных для поиска номеров телефонов."
+  },
+    {
+    category: "Люди и контакты",
+    name: "SMSC HLR Lookup",
+    url: "https://smsc.ru/testhlr/",
+    icon: "P",
+    description: "Проверка номера телефона и его оператора."
   },
 
   // Соцсети и мессенджеры
@@ -123,7 +130,7 @@ const TOOLS = [
     name: "VirusTotal",
     url: "https://www.virustotal.com/",
     icon: "V",
-    description: "Анализ файлов, URL и доменов"
+    description: "Анализ файлов, URL и доменов."
   },
 
   // Гео и объекты
@@ -132,21 +139,21 @@ const TOOLS = [
     name: "OpenStreetMap",
     url: "https://www.openstreetmap.org/",
     icon: "M",
-    description: "Открытая карта"
+    description: "Открытая карта."
   },
   {
     category: "Гео и объекты",
     name: "Google Maps",
     url: "https://maps.google.com/",
     icon: "M",
-    description: "Карта и спутниковые снимки"
+    description: "Карта и спутниковые снимки."
   },
   {
     category: "Гео и объекты",
     name: "2GIS",
     url: "https://2gis.ru/",
     icon: "2",
-    description: "Карта и справочник организаций"
+    description: "Карта и справочник организаций."
   },
 
   // Медиа и файлы
@@ -155,14 +162,14 @@ const TOOLS = [
     name: "ExifTool",
     url: "https://exiftool.org/",
     icon: "E",
-    description: "Метаданные файлов"
+    description: "Метаданные файлов."
   },
   {
     category: "Медиа и файлы",
     name: "InVID",
     url: "https://www.invid-project.eu/",
     icon: "I",
-    description: "Анализ и проверка видео"
+    description: "Анализ и проверка видео."
   },
 
   // Реестры и бизнес
@@ -171,7 +178,7 @@ const TOOLS = [
     name: "OpenCorporates",
     url: "https://opencorporates.com/",
     icon: "O",
-    description: "Данные о компаниях"
+    description: "Данные о компаниях."
   },
 
   // Крипто и блокчейн
@@ -180,14 +187,14 @@ const TOOLS = [
     name: "Etherscan",
     url: "https://etherscan.io/",
     icon: "Ξ",
-    description: "Ethereum explorer"
+    description: "Ethereum explorer."
   },
   {
     category: "Крипто и блокчейн",
     name: "Blockchain.com Explorer",
     url: "https://www.blockchain.com/explorer",
     icon: "₿",
-    description: "Blockchain explorer"
+    description: "Blockchain explorer."
   },
 
   // Рабочая среда
@@ -219,7 +226,7 @@ const TOOLS = [
     name: "Hugging Face",
     url: "https://huggingface.co/",
     icon: "HF",
-    description: "Модели и AI-инструменты"
+    description: "Модели и AI-инструменты."
   },
 
   // OPSEC и обучение
@@ -228,7 +235,7 @@ const TOOLS = [
     name: "OWASP",
     url: "https://owasp.org/",
     icon: "O",
-    description: "Безопасность и обучение"
+    description: "Безопасность и обучение."
   },
   {
     category: "OPSEC и обучение",
@@ -265,14 +272,14 @@ const TOOLS = [
     name: "GitHub",
     url: "https://github.com/",
     icon: "GH",
-    description: "Репозитории и код"
+    description: "Репозитории и код."
   },
   {
     category: "Код и репозитории",
     name: "GitLab",
     url: "https://gitlab.com/",
     icon: "GL",
-    description: "Репозитории и CI/CD"
+    description: "Репозитории и CI/CD."
   },
 
   // Дорки
@@ -281,7 +288,7 @@ const TOOLS = [
     name: "Google Advanced Search",
     url: "https://www.google.com/advanced_search",
     icon: "G",
-    description: "Расширенный поиск"
+    description: "Расширенный поиск."
   },
 
   // Порты
@@ -290,14 +297,14 @@ const TOOLS = [
     name: "Shodan",
     url: "https://www.shodan.io/",
     icon: "S",
-    description: "Поиск публично доступных сервисов"
+    description: "Поиск публично доступных сервисов."
   },
   {
     category: "Порты",
     name: "Censys",
     url: "https://search.censys.io/",
     icon: "C",
-    description: "Поиск интернет-хостов и сертификатов"
+    description: "Поиск интернет-хостов и сертификатов."
   },
 
   // Веб-архивы
@@ -306,14 +313,14 @@ const TOOLS = [
     name: "Archive.today",
     url: "https://archive.today/",
     icon: "A",
-    description: "Архив веб-страниц"
+    description: "Архив веб-страниц."
   },
   {
     category: "Веб-архивы",
     name: "Wayback Machine",
     url: "https://web.archive.org/",
     icon: "W",
-    description: "Веб-архив"
+    description: "Веб-архив."
   }
 ];
 
@@ -390,47 +397,48 @@ const UI_TEXT = {
 };
 
 const TOOL_DESCRIPTIONS_EN = {
-  "Google": "Search engine",
-  "Yandex": "Search and web services",
-  "DuckDuckGo": "Search engine",
-  "Brave Search": "Independent search engine",
-  "SearXNG": "Meta-search engine",
-  "Startpage": "Private search engine",
-  "Google Scholar": "Academic search",
-  "arXiv": "Research publications",
-  "Hunter": "Find professional email addresses",
-  "Have I Been Pwned": "Check whether accounts have appeared in data breaches",
-  "Truecaller": "Phone number lookup database",
-  "TGCollector": "Collect data from Telegram",
-  "TgramSearch": "Search Telegram channels and groups",
-  "Telescan": "Analyze Telegram channels and groups",
-  "who.is": "Domain and IP address ownership information",
-  "onion lookup": "Find information about .onion domains and their owners",
-  "VirusTotal": "Analyze files, URLs, and domains",
-  "OpenStreetMap": "Open map",
-  "Google Maps": "Maps and satellite imagery",
-  "2GIS": "Map and business directory",
-  "ExifTool": "File metadata",
-  "InVID": "Video analysis and verification",
-  "OpenCorporates": "Company data",
-  "Etherscan": "Ethereum explorer",
-  "Blockchain.com Explorer": "Blockchain explorer",
-  "ZodiacGraph": "Visualize connections and analyze data",
-  "Obsidian": "Note-taking and knowledge management",
-  "Miro": "Collaborative workspace for visualizing ideas",
-  "Hugging Face": "AI models and tools",
-  "OWASP": "Security resources and training",
-  "Tor": "Anonymous access and privacy protection",
-  "Signal": "Open-source messenger with end-to-end encryption",
-  "Nmap": "Network scanning and vulnerability analysis",
-  "ISC SANS": "Cybersecurity news and analysis",
-  "GitHub": "Code and repositories",
-  "GitLab": "Repositories and CI/CD",
-  "Google Advanced Search": "Advanced search",
-  "Shodan": "Find publicly accessible internet-connected services",
-  "Censys": "Search internet hosts and certificates",
-  "Archive.today": "Web page archive",
-  "Wayback Machine": "Web archive"
+  "Google": "Search engine.",
+  "Yandex": "Search and web services.",
+  "DuckDuckGo": "Search engine.",
+  "Brave Search": "Independent search engine.",
+  "SearXNG": "Meta-search engine.",
+  "Startpage": "Private search engine.",
+  "Google Scholar": "Academic search.",
+  "arXiv": "Research publications.",
+  "Hunter": "Find professional email addresses.",
+  "Have I Been Pwned": "Check whether accounts have appeared in data breaches.",
+  "Truecaller": "Phone number lookup database.",
+  "SMSC HLR Lookup": "Check a phone number and its carrier.",
+  "TGCollector": "Collect data from Telegram.",
+  "TgramSearch": "Search Telegram channels and groups.",
+  "Telescan": "Analyze Telegram channels and groups.",
+  "who.is": "Domain and IP address ownership information.",
+  "onion lookup": "Find information about .onion domains and their owners.",
+  "VirusTotal": "Analyze files, URLs, and domains.",
+  "OpenStreetMap": "Open map.",
+  "Google Maps": "Maps and satellite imagery.",
+  "2GIS": "Map and business directory.",
+  "ExifTool": "File metadata.",
+  "InVID": "Video analysis and verification.",
+  "OpenCorporates": "Company data.",
+  "Etherscan": "Ethereum explorer.",
+  "Blockchain.com Explorer": "Blockchain explorer.",
+  "ZodiacGraph": "Visualize connections and analyze data.",
+  "Obsidian": "Note-taking and knowledge management.",
+  "Miro": "Collaborative workspace for visualizing ideas.",
+  "Hugging Face": "AI models and tools.",
+  "OWASP": "Security resources and training.",
+  "Tor": "Anonymous access and privacy protection.",
+  "Signal": "Open-source messenger with end-to-end encryption.",
+  "Nmap": "Network scanning and vulnerability analysis.",
+  "ISC SANS": "Cybersecurity news and analysis.",
+  "GitHub": "Code and repositories.",
+  "GitLab": "Repositories and CI/CD.",
+  "Google Advanced Search": "Advanced search.",
+  "Shodan": "Find publicly accessible internet-connected services.",
+  "Censys": "Search internet hosts and certificates.",
+  "Archive.today": "Web page archive.",
+  "Wayback Machine": "Web archive."
 };
 
 function getToolDescription(tool) {
