@@ -86,6 +86,35 @@ const TOOLS = [
     icon: "P",
     description: "Проверка номера телефона и его оператора."
   },
+    {
+    category: "Люди и контакты",
+    name: "E-Caller",
+    url: "https://www.e-caller.com/",
+    icon: "P",
+    description: "Проверка номера телефона и его оператора"
+  },
+   {
+    category: "Люди и контакты",
+    name: "HackCheck",
+    url: "https://hackcheck.io/",
+    icon: "P",
+    description: "Проверка утечек данных и поиск информации о пользователях."
+  },
+   {
+    category: "Люди и контакты",
+    name: "Dehashed",
+    url: "https://www.dehashed.com/",
+    icon: "P",
+    description: "Проверка утечек данных и поиск информации о пользователях."
+  },
+   {
+    category: "Люди и контакты",
+    name: "OSINTKit",
+    url: "https://osintkit.net/",
+    icon: "P",
+    description: "Проверка утечек данных и поиск информации о русских жителях, совершивших преступления в Украине."
+  },
+  
   // Соцсети и мессенджеры
   {
     category: "Соцсети и мессенджеры",
@@ -161,6 +190,27 @@ const TOOLS = [
     icon: "2",
     description: "Карта и справочник организаций."
   },
+  {
+    category: "Гео и объекты",
+    name: "Автокод",
+    url: "https://avtocod.ru/",
+    icon: "2",
+    description: "Проверка автомобилей по VIN, гос. номеру и другим параметрам."
+  },
+  {
+    category: "Гео и объекты",
+    name: "Nperf 5G Coverage Map",
+    url: "https://www.nperf.com/en/map/5g",
+    icon: "2",
+    description: "Карта покрытия 5G в разных странах."
+  },
+    {
+    category: "Гео и объекты",
+    name: "Alerts.in.ua",
+    url: "https://alerts.in.ua/",
+    icon: "2",
+    description: "Карта боевых действий в Украине."
+  },
 
   // Медиа и файлы
   {
@@ -224,6 +274,13 @@ const TOOLS = [
     url: "https://miro.com/",
     icon: "M",
     description: "Платформа для совместной работы и визуализации идей."
+  },
+  {
+    category: "Рабочая среда",
+    name: "OSINT Framework",
+    url: "https://osintframework.com/",
+    icon: "M",
+    description: "Фреймворк для OSINT-ресурсов и инструментов."
   },
 
   // Искусственный интеллект
@@ -306,6 +363,22 @@ const TOOLS = [
     description: "Поиск интернет-хостов и сертификатов."
   },
 
+  // Зеркала
+  {
+    category: "Зеркала",
+    name: "FindHomo",
+    url: "https://www.findhomo.com/",
+    icon: "З",
+    description: "Поиск людей и открытых данных по профильным записям."
+  },
+  {
+    category: "Зеркала",
+    name: "FunStat/Telelog",
+    url: "https://funstat.info/",
+    icon: "З",
+    description: "Анализ Telegram-каналов, групп и статистики активности аудитории."
+  },
+
   // Веб-архивы
   {
     category: "Веб-архивы",
@@ -345,6 +418,7 @@ const CATEGORY_TRANSLATIONS = {
     "Код и репозитории": "Код и репозитории",
     "Дорки": "Дорки",
     "Порты": "Порты",
+    "Зеркала": "Зеркала",
     "Веб-архивы": "Веб-архивы"
   },
   en: {
@@ -362,6 +436,7 @@ const CATEGORY_TRANSLATIONS = {
     "Код и репозитории": "Code & Repositories",
     "Дорки": "Dorks",
     "Порты": "Ports",
+    "Зеркала": "Mirrors",
     "Веб-архивы": "Web Archives"
   }
 };
@@ -393,6 +468,20 @@ const UI_TEXT = {
   }
 };
 
+const TOOL_NAMES_EN = {
+  "Автокод": "Avtocod",
+  "E-Caller": "E-Caller",
+  "HackCheck": "HackCheck",
+  "Dehashed": "Dehashed",
+  "OSINTKit": "OSINTKit",
+  "TGCollector": "TGCollector",
+  "TgramSearch": "TgramSearch",
+  "Telescan": "Telescan",
+  "FindHomo": "FindHomo",
+  "FunStat/Telelog": "FunStat/Telelog",
+  "Зеркало": "Mirror"
+};
+
 const TOOL_DESCRIPTIONS_EN = {
   "Google": "Search engine.",
   "Yandex": "Search and web services.",
@@ -406,15 +495,23 @@ const TOOL_DESCRIPTIONS_EN = {
   "Have I Been Pwned": "Check whether accounts have appeared in data breaches.",
   "Truecaller": "Phone number lookup database.",
   "SMSC HLR Lookup": "Check a phone number and its carrier.",
+  "E-Caller": "Check a phone number and its operator.",
+  "HackCheck": "Check data leaks and user information.",
+  "Dehashed": "Search data leaks and user records.",
+  "OSINTKit": "Search breach data and information about Russian citizens involved in crimes in Ukraine.",
   "TGCollector": "Collect data from Telegram.",
   "TgramSearch": "Search Telegram channels and groups.",
   "Telescan": "Analyze Telegram channels and groups.",
+  "Signal": "Open-source messaging app with end-to-end encryption.",
   "who.is": "Domain and IP address ownership information.",
   "onion lookup": "Find information about .onion domains and their owners.",
   "VirusTotal": "Analyze files, URLs, and domains.",
   "OpenStreetMap": "Open map.",
   "Google Maps": "Maps and satellite imagery.",
   "2GIS": "Map and business directory.",
+  "Автокод": "Vehicle check by VIN, license plate and other parameters.",
+  "Nperf 5G Coverage Map": "5G coverage map across countries.",
+  "Alerts.in.ua": "Map of combat actions in Ukraine.",
   "ExifTool": "File metadata.",
   "InVID": "Video analysis and verification.",
   "OpenCorporates": "Company data.",
@@ -423,10 +520,10 @@ const TOOL_DESCRIPTIONS_EN = {
   "ZodiacGraph": "Visualize connections and analyze data.",
   "Obsidian": "Note-taking and knowledge management.",
   "Miro": "Collaborative workspace for visualizing ideas.",
+  "OSINT Framework": "OSINT resource and tool framework.",
   "Hugging Face": "AI models and tools.",
   "OWASP": "Security resources and training.",
   "Tor": "Anonymous access and privacy protection.",
-  "Signal": "Open-source messaging app with end-to-end encryption.",
   "Nmap": "Network scanning and vulnerability analysis.",
   "ISC SANS": "Cybersecurity news and analysis.",
   "GitHub": "Code and repositories.",
@@ -434,9 +531,20 @@ const TOOL_DESCRIPTIONS_EN = {
   "Google Advanced Search": "Advanced search.",
   "Shodan": "Find publicly accessible internet-connected services.",
   "Censys": "Search internet hosts and certificates.",
+  "FindHomo": "People search and profile data discovery service.",
+  "FunStat/Telelog": "Telegram channel and group analytics with audience and activity statistics.",
+  "Зеркало": "Mirror view for reading and analyzing web pages.",
   "Archive.today": "Web page archive.",
   "Wayback Machine": "Web archive."
 };
+
+function getToolName(tool) {
+  if (getCurrentLanguage() === "en") {
+    return TOOL_NAMES_EN[tool.name] || tool.name;
+  }
+
+  return tool.name;
+}
 
 function getToolDescription(tool) {
   if (getCurrentLanguage() === "en") {
@@ -542,7 +650,7 @@ function filteredTools() {
 
     const searchMatch =
       !query ||
-      tool.name.toLowerCase().includes(query) ||
+      getToolName(tool).toLowerCase().includes(query) ||
       tool.description.toLowerCase().includes(query) ||
       getToolDescription(tool).toLowerCase().includes(query) ||
       tool.category.toLowerCase().includes(query);
@@ -552,7 +660,7 @@ function filteredTools() {
 
   if (state.alphabetical) {
     result = [...result].sort((a, b) =>
-      a.name.localeCompare(b.name, "ru")
+      getToolName(a).localeCompare(getToolName(b), undefined, { sensitivity: "base" })
     );
   }
 
@@ -585,7 +693,7 @@ function render() {
              rel="noopener noreferrer">
             <div class="tool-icon">${escapeHtml(tool.icon || "⌁")}</div>
             <div class="tool-body">
-              <div class="tool-name">${escapeHtml(tool.name)}</div>
+              <div class="tool-name">${escapeHtml(getToolName(tool))}</div>
               <div class="tool-desc">${escapeHtml(getToolDescription(tool))}</div>
               <div class="tool-url">${escapeHtml(new URL(tool.url).hostname)}</div>
             </div>
