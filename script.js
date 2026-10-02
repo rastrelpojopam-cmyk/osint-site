@@ -651,7 +651,7 @@ function filteredTools() {
     const searchMatch =
       !query ||
       getToolName(tool).toLowerCase().includes(query) ||
-      tool.description.toLowerCase().includes(query) ||
+      (tool.description || "").toLowerCase().includes(query) ||
       getToolDescription(tool).toLowerCase().includes(query) ||
       tool.category.toLowerCase().includes(query);
 
